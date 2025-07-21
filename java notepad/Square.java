@@ -1,24 +1,24 @@
 import java.util.Scanner;
-
 public class Square {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the first integer: ");
-        int number1 = input.nextInt();
+public static void main(String[] arg) {
+Scanner scanner = new Scanner (System.in);
 
-        System.out.print("Enter the second integer: ");
-        int number2 = input.nextInt();
+System.out.print("enter a number: ");
+int number = scanner.nextInt();
 
-        int square1 = number1 * number1;
-        int square2 = number2 * number2;
+boolean square = isSquare(number);
+System.out.print(square);
+}
 
-        int sumOfSquares = square1 + square2;
-        int differenceOfSquares = square1 - square2;
+public static boolean isSquare(int number){
+if (Math.sqrt(number) * Math.sqrt(number) == number){
+return (true);
+}
+else{
+return (false);
+}
 
-        System.out.println("Square of number1 is: " + square1);
-        System.out.println("Square of number2 is: " + square2);
-        System.out.println("Sum of the squares is: " + sumOfSquares);
-        System.out.println("Difference of the squares: " + differenceOfSquares);
-    }
+
+}
 }

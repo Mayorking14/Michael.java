@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class IntegerSquare {
+public static void main(String... arg){
+
+Scanner scanner = new Scanner (System.in);
+
+System.out.print("enter an integer: ");
+int number = scanner.nextInt();
+
+int result = squareOf(number);
+System.out.println(result);
+}
+
+public static int squareOf(int number) {
+  
+int number = number * number ;
+return result;
+
+
+
+}
+}
