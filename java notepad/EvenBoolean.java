@@ -7,10 +7,9 @@ Scanner input = new Scanner (System.in);
 System.out.print("enter a number-> ");
 int number = input.nextInt();
 
-boolean result =  isEven(number);
-System.out.println(result);
+boolean even = isEven(number);
+System.out.print(even);
 }
-
 
 public static boolean isEven(int number){
 if (number % 2 == 0) {
@@ -20,7 +19,6 @@ else  {
 return(false);
 }
 
-
-
 }
+
 }

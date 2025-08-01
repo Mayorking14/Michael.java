@@ -1,7 +1,6 @@
 public class Kata {
 public static void main(String[] arg){
 
-
 }
 //Method 1
 
