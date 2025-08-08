@@ -165,15 +165,17 @@ return oddNumber;
 
 
 public static int[] squareNumbersIn(int[] numbers){
-int[] arraySquareNumbers = new int[]
+int[] arraySquareNumbers = new int[numbers.length];
 
 for(int count = 0; count < numbers.length; count++){
-arraySquareNumbers = numbers[count] ** 2;
+
+arraySquareNumbers[count] = numbers[count] * numbers[count];
 
 
 }
 return arraySquareNumbers;
 }
+
 
 
 }
